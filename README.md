@@ -4,7 +4,7 @@
     
 ######(If you like this theme or using it, please give a :star: for motivation.)
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+**[Moon](https://taylantatli.github.io/Moon)** This is JC's Blog.
 
 ## Features
 * Minimal, you can focus on your content
