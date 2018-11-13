@@ -1,7 +1,7 @@
 # Basic
 title: JC
 subtitle: 不以物喜,不以己悲
-welcome_message: 一个低调的程序猿
+welcome_message: 一个低调的iOS程序猿
 description: An unobtrusive programmer.
 creator: <a href="https://baixiaohui.github.io/jc.github.io/">@onevcat</a>
 
@@ -22,7 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'https://baixiaohui.github.io/jc.github.io/'}
+    # - {title: Projects, description: My Projects, url: 'https://baixiaohui.github.io/jc.github.io/'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
