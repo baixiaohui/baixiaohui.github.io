@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="An unobtrusive programmer.">
+  <title>iOS bug 总结</title>
+  <meta name="description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
   <meta name="author" content="Wei Wang">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="An unobtrusive programmer.">
+  <meta name="twitter:title" content="iOS bug 总结">
+  <meta name="twitter:description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="About">
-  <meta property="og:description" content="An unobtrusive programmer.">
+  <meta property="og:title" content="iOS bug 总结">
+  <meta property="og:description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
   
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="canonical" href="http://localhost:4000/about/">
+  <link rel="canonical" href="http://localhost:4000/2018/10/Bug/">
   <link rel="alternate" type="application/rss+xml" title="JC" href="http://localhost:4000/feed.xml">
   
   <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
@@ -131,24 +131,83 @@
             <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="" itemprop="datePublished" class="post-meta__date date"></time> &#8226; <span class="post-meta__tags tags"></span>
+      <time datetime="2018-10-06 14:32:54 +0800" itemprop="datePublished" class="post-meta__date date">2018-10-06</time> &#8226; <span class="post-meta__tags tags">胡言乱语集</span>
     </div>
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title">iOS bug 总结</h1>
   </header>
 
   <section class="post">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+    <p>1、Start date cannot be later in time than end date!
+这是iOS10.0-10.2的bug。苹果在iOS10.2已修复</p>
 
-<p>You can find the source code for the Jekyll new theme at:</p>
+<p>2、-[__NSArrayM objectAtIndexedSubscript:]: index 18446744073709551615 beyond bounds for empty array
+极光bug（JPush3.1.0+JCore1.2.1版本修复）</p>
 
-<p><a href="https://github.com/jglovier/jekyll-new">jekyll-new</a></p>
+<p>3、[MAMapEngine(Callback)requireMapData:requestParam:]_block_invoke
+高德地图SDK更新至6.4.0可修复</p>
 
-<p>You can find the source code for Jekyll at</p>
+<p>4、amapLocationManager(_manager:AMapLocationManager!, didUpdate location:CLLocation!, reGeocode:AMapLocationReGeocode!)
+reGeocode不为nil时，某些reGeocode.citycode，  reGeocode.district，reGeocode.street在某些地区可能为nil，具体地区还未能确定，使用时请加以校验</p>
 
-<p><a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>5、weiboSDK已经很久没有维护了，在swift4.2之后会出现很多闪退问题</p>
+
+<p>6、 -[AVCaptureMetadataOutput setMetadataObjectTypes:] Unsupported type found - use -availableMetadataObjectTypes
+这个问题不仅是权限未开启会导致，设置sessionPreset时请先使用supportsSessionPreset校验，某些手机硬件不支持。</p>
 
   </section>
 </article>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- OneV's Den -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3324997515191619"
+     data-ad-slot="9170309685"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<section class="read-more">
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2011/09/ban-jia/" title="link to 搬家">搬家</a></h2>
+       <p class="excerpt">最早开博于新浪，大概已经是六七年前的事情了吧。然后是稳定的写博期，然后人开始变懒就不怎么写东西了，再然后…再然后就没有了…最近总被问“你玩微博么”，其实在twitter诞生之初的07年我就有帐号了..不幸的是周围没人和我有相同的爱好，加上智能手机不流行以及跨国短信贵死人等诸多因素，导致现在的twiiter上只有一个follower。而社交网络这种东西要是没人和你玩的话，估计自己连自己玩蛋的兴趣都不会有，于是后来加上伟大的党的伟大封杀，就彻底对微博没了胃口。不过就算这样我还是会很礼貌的把自己...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2011-09-05 22:32:54 +0800" class="post-list__meta--date date">2011-09-05</time> &#8226; <span class="post-list__meta--tags tags">胡言乱语集</span><a class="btn-border-small" href=/2011/09/ban-jia/>继续阅读</a></div>
+   </div>
+   
+</section>
+<section class="post-comments">
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4000/2018/10/Bug/";
+        this.page.identifier = "/2018/10/Bug/";
+    };
+    var disqus_shortname = 'JC';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+  
+  
+  
+</section>
+
+
             <section class="footer">
     <footer>
     	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
