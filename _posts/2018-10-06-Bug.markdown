@@ -2,7 +2,7 @@
 layout: post
 title: iOS bug 总结
 date: 2018-10-06 15:32:54.000000000 +09:00
-tags: 胡言乱语集
+tags: iOS
 ---
 1、Start date cannot be later in time than end date!
 这是iOS10.0-10.2的bug。苹果在iOS10.2已修复

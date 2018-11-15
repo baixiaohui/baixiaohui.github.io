@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>iOS bug 总结</title>
-  <meta name="description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
+  <title>Swift-enum,struct,class</title>
+  <meta name="description" content="enum:Swift中的枚举是为一组有限种可能性的相关值提供的通用类型（在C/C++/Objective-C中，枚举是一个被命名的整型常数的集合）；使用枚举可以类型安全并且有提示性地操作这些值。struct:结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。结构体是一种值类型的数据结构，在Swift中常...">
   <meta name="author" content="Wei Wang">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="iOS bug 总结">
-  <meta name="twitter:description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
+  <meta name="twitter:title" content="Swift-enum,struct,class">
+  <meta name="twitter:description" content="enum:Swift中的枚举是为一组有限种可能性的相关值提供的通用类型（在C/C++/Objective-C中，枚举是一个被命名的整型常数的集合）；使用枚举可以类型安全并且有提示性地操作这些值。struct:结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。结构体是一种值类型的数据结构，在Swift中常...">
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="iOS bug 总结">
-  <meta property="og:description" content="1、Start date cannot be later in time than end date!这是iOS10.0-10.2的bug。苹果在iOS10.2已修复">
+  <meta property="og:title" content="Swift-enum,struct,class">
+  <meta property="og:description" content="enum:Swift中的枚举是为一组有限种可能性的相关值提供的通用类型（在C/C++/Objective-C中，枚举是一个被命名的整型常数的集合）；使用枚举可以类型安全并且有提示性地操作这些值。struct:结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。结构体是一种值类型的数据结构，在Swift中常...">
   
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="canonical" href="http://localhost:4000/2018/10/Bug/">
+  <link rel="canonical" href="http://localhost:4000/2017/09/swift/">
   <link rel="alternate" type="application/rss+xml" title="JC" href="http://localhost:4000/feed.xml">
   
   <meta name="google-site-verification" content="7-Ggcn7LUoqoDwECW-2KIjea_bDslL0zwUhKRwOPUl4" />
@@ -131,28 +131,44 @@
             <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-10-06 14:32:54 +0800" itemprop="datePublished" class="post-meta__date date">2018-10-06</time> &#8226; <span class="post-meta__tags tags">iOS</span>
+      <time datetime="2017-09-28 14:06:31 +0800" itemprop="datePublished" class="post-meta__date date">2017-09-28</time> &#8226; <span class="post-meta__tags tags">iOS</span>
     </div>
-    <h1 class="post-title">iOS bug 总结</h1>
+    <h1 class="post-title">Swift-enum,struct,class</h1>
   </header>
 
   <section class="post">
-    <p>1、Start date cannot be later in time than end date!
-这是iOS10.0-10.2的bug。苹果在iOS10.2已修复</p>
+    <p>enum:
+Swift中的枚举是为一组有限种可能性的相关值提供的通用类型（在C/C++/Objective-C中，枚举是一个被命名的整型常数的集合）；使用枚举可以类型安全并且有提示性地操作这些值。
+struct:
+结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。结构体是一种值类型的数据结构，在Swift中常常使用结构体封装一些属性甚至是方法来组成新的复杂类型，目的是简化运算。</p>
+<ul>
+  <li>枚举、结构体、类的共同点：
+1，定义属性和方法；
+2，下标语法访问值；
+3，初始化器；
+4，支持扩展增加功能；
+5，可以遵循协议；</li>
+  <li>类特有的功能：
+1，继承；
+2，允许类型转换；
+3，析构方法释放资源；
+4，引用计数；</li>
+  <li>类是引用类型
+引用类型(reference types，通常是类)被复制的时候其实复制的是一份引用，两份引用指向同一个对象。所以在修改一个实例的数据时副本的数据也被修改了(s1、s2)。</li>
+  <li>枚举，结构体是值类型
+值类型(value types)的每一个实例都有一份属于自己的数据，在复制时修改一个实例的数据并不影响副本的数据。值类型和引用类型是这三兄弟最本质的区别。</li>
+</ul>
 
-<p>2、-[__NSArrayM objectAtIndexedSubscript:]: index 18446744073709551615 beyond bounds for empty array
-极光bug（JPush3.1.0+JCore1.2.1版本修复）</p>
-
-<p>3、[MAMapEngine(Callback)requireMapData:requestParam:]_block_invoke
-高德地图SDK更新至6.4.0可修复</p>
-
-<p>4、amapLocationManager(_manager:AMapLocationManager!, didUpdate location:CLLocation!, reGeocode:AMapLocationReGeocode!)
-reGeocode不为nil时，某些reGeocode.citycode，  reGeocode.district，reGeocode.street在某些地区可能为nil，具体地区还未能确定，使用时请加以校验</p>
-
-<p>5、weiboSDK已经很久没有维护了，在swift4.2之后会出现很多闪退问题</p>
-
-<p>6、 -[AVCaptureMetadataOutput setMetadataObjectTypes:] Unsupported type found - use -availableMetadataObjectTypes
-这个问题不仅是权限未开启会导致，设置sessionPreset时请先使用supportsSessionPreset校验，某些手机硬件不支持。</p>
+<p>ps:</p>
+<ul>
+  <li>什么时候该用值类型：
+要用==运算符来比较实例的数据时
+你希望那个实例的拷贝能保持独立的状态时
+数据会被多个线程使用时</li>
+  <li>什么时候该用引用类型（class）：
+要用==运算符来比较实例身份的时候
+你希望有创建一个共享的、可变对象的时候</li>
+</ul>
 
   </section>
 </article>
@@ -171,13 +187,21 @@ reGeocode不为nil时，某些reGeocode.citycode，  reGeocode.district，reGeo
 <section class="read-more">
    
    
+   <div class="read-more-item">
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2018/04/Library-Not-Loaded/" title="link to Library not loaded">Library not loaded</a></h2>
+       <p class="excerpt">错误解决：dyld: Library not loaded: @rpath/解决方法：  退出 Xcode  重启电脑  找到 这个 DerivedData 文件夹 删除 (路径: ~/Library/Developer/Xcode/DerivedData)  删除这个 com.apple.dt.Xcode 文件 (路径: ~/Library/Caches/com.apple.dt.Xcode)然后 在运行 Xcode 就好了~~&hellip;</p>
+       <div class="post-list__meta"><time datetime="2018-04-19 16:12:32 +0800" class="post-list__meta--date date">2018-04-19</time> &#8226; <span class="post-list__meta--tags tags">iOS</span><a class="btn-border-small" href=/2018/04/Library-Not-Loaded/>继续阅读</a></div>
+   </div>
+   
+   
    
    
    <div class="read-more-item">
        <span class="read-more-item-dim">更早的文章</span>
-       <h2 class="post-list__post-title post-title"><a href="/2018/04/Library-Not-Loaded/" title="link to Library not loaded">Library not loaded</a></h2>
-       <p class="excerpt">错误解决：dyld: Library not loaded: @rpath/解决方法：  退出 Xcode  重启电脑  找到 这个 DerivedData 文件夹 删除 (路径: ~/Library/Developer/Xcode/DerivedData)  删除这个 com.apple.dt.Xcode 文件 (路径: ~/Library/Caches/com.apple.dt.Xcode)然后 在运行 Xcode 就好了~~&hellip;</p>
-       <div class="post-list__meta"><time datetime="2018-04-19 16:12:32 +0800" class="post-list__meta--date date">2018-04-19</time> &#8226; <span class="post-list__meta--tags tags">iOS</span><a class="btn-border-small" href=/2018/04/Library-Not-Loaded/>继续阅读</a></div>
+       <h2 class="post-list__post-title post-title"><a href="/2015/11/Blog-site/" title="link to 博客分享">博客分享</a></h2>
+       <p class="excerpt">看看iOS大神们的博客吧：王巍http://onevcat.com/破船之家http://beyondvincent.com/NSHipsterhttp://nshipster.cn/Limboy 无网不剩http://limboy.me唐巧的技术博客http://blog.devtang.com/Lex iOS noteshttp://ios.lextang.com/念茜的博客http://nianxi.net/Xcode Devhttp://blog.xcodev.com/Ted’s ...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2015-11-06 10:16:25 +0800" class="post-list__meta--date date">2015-11-06</time> &#8226; <span class="post-list__meta--tags tags">iOS</span><a class="btn-border-small" href=/2015/11/Blog-site/>继续阅读</a></div>
    </div>
    
 </section>

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2011/09/ban-jia/</loc>
-<lastmod>2011-09-05T22:32:54+08:00</lastmod>
+<loc>http://localhost:4000/2015/11/Blog-site/</loc>
+<lastmod>2015-11-06T10:16:25+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2017/09/swift/</loc>
+<lastmod>2017-09-28T14:06:31+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2018/04/Library-Not-Loaded/</loc>
+<lastmod>2018-04-19T16:12:32+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2018/10/Bug/</loc>

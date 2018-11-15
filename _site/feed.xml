@@ -5,8 +5,8 @@
     <description>An unobtrusive programmer.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Nov 2018 13:27:01 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Nov 2018 13:27:01 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Nov 2018 15:18:06 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 15:18:06 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -32,28 +32,220 @@ reGeocode不为nil时，某些reGeocode.citycode，  reGeocode.district，reGeo
         <link>http://localhost:4000/2018/10/Bug/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/10/Bug/</guid>
         
-        <category>胡言乱语集</category>
+        <category>iOS</category>
         
         
       </item>
     
       <item>
-        <title>搬家</title>
-        <description>&lt;p&gt;最早开博于新浪，大概已经是六七年前的事情了吧。&lt;/p&gt;
-
-&lt;p&gt;然后是稳定的写博期，然后人开始变懒就不怎么写东西了，再然后…再然后就没有了…&lt;/p&gt;
-
-&lt;p&gt;最近总被问“你玩微博么”，其实在twitter诞生之初的07年我就有帐号了..不幸的是周围没人和我有相同的爱好，加上智能手机不流行以及跨国短信贵死人等诸多因素，导致现在的twiiter上只有一个follower。而社交网络这种东西要是没人和你玩的话，估计自己连自己玩蛋的兴趣都不会有，于是后来加上伟大的党的伟大封杀，就彻底对微博没了胃口。不过就算这样我还是会很礼貌的把自己的新浪微博腾讯微博搜狐微博网易微博凤凰微博一股脑的告诉他，然后加一句：上面什么都没有哦，亲！&lt;/p&gt;
-
-&lt;p&gt;其实心底里还是觉得标准博客才是真正能写出东西的地方，而微博更多地还是掺杂有一些被追捧性质的信息时事交流的类快餐文化平台。真的很难想象在极度口语化的时代，微博那短短几十个字能够承载起文化的传承和积淀，而信息传播这一主要功能却又无时无刻不在“有关部门”的监管之下，似乎也难有作为。于是乎造成了中国微博看似繁荣，实则尴尬的局面。&lt;/p&gt;
-
-&lt;p&gt;重新开始写博，一方面是希望今后的生活能有些许积淀，能为以后的回忆留下可以追溯的足迹；另一方面也算机缘所致，恰好有这么个拾回以前习惯的机会。总之，何乐不为呢～？&lt;/p&gt;
+        <title>Library not loaded</title>
+        <description>&lt;p&gt;错误解决：dyld: Library not loaded: @rpath/
+解决方法：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;退出 Xcode&lt;/li&gt;
+  &lt;li&gt;重启电脑&lt;/li&gt;
+  &lt;li&gt;找到 这个 DerivedData 文件夹 删除 (路径: ~/Library/Developer/Xcode/DerivedData)&lt;/li&gt;
+  &lt;li&gt;删除这个 com.apple.dt.Xcode 文件 (路径: ~/Library/Caches/com.apple.dt.Xcode)
+然后 在运行 Xcode 就好了~~&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Mon, 05 Sep 2011 22:32:54 +0800</pubDate>
-        <link>http://localhost:4000/2011/09/ban-jia/</link>
-        <guid isPermaLink="true">http://localhost:4000/2011/09/ban-jia/</guid>
+        <pubDate>Thu, 19 Apr 2018 16:12:32 +0800</pubDate>
+        <link>http://localhost:4000/2018/04/Library-Not-Loaded/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/Library-Not-Loaded/</guid>
         
-        <category>胡言乱语集</category>
+        <category>iOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Swift-enum,struct,class</title>
+        <description>&lt;p&gt;enum:
+Swift中的枚举是为一组有限种可能性的相关值提供的通用类型（在C/C++/Objective-C中，枚举是一个被命名的整型常数的集合）；使用枚举可以类型安全并且有提示性地操作这些值。
+struct:
+结构体是由一系列具有相同类型或不同类型的数据构成的数据集合。结构体是一种值类型的数据结构，在Swift中常常使用结构体封装一些属性甚至是方法来组成新的复杂类型，目的是简化运算。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;枚举、结构体、类的共同点：
+1，定义属性和方法；
+2，下标语法访问值；
+3，初始化器；
+4，支持扩展增加功能；
+5，可以遵循协议；&lt;/li&gt;
+  &lt;li&gt;类特有的功能：
+1，继承；
+2，允许类型转换；
+3，析构方法释放资源；
+4，引用计数；&lt;/li&gt;
+  &lt;li&gt;类是引用类型
+引用类型(reference types，通常是类)被复制的时候其实复制的是一份引用，两份引用指向同一个对象。所以在修改一个实例的数据时副本的数据也被修改了(s1、s2)。&lt;/li&gt;
+  &lt;li&gt;枚举，结构体是值类型
+值类型(value types)的每一个实例都有一份属于自己的数据，在复制时修改一个实例的数据并不影响副本的数据。值类型和引用类型是这三兄弟最本质的区别。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ps:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;什么时候该用值类型：
+要用==运算符来比较实例的数据时
+你希望那个实例的拷贝能保持独立的状态时
+数据会被多个线程使用时&lt;/li&gt;
+  &lt;li&gt;什么时候该用引用类型（class）：
+要用==运算符来比较实例身份的时候
+你希望有创建一个共享的、可变对象的时候&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 28 Sep 2017 14:06:31 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/swift/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/swift/</guid>
+        
+        <category>iOS</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>博客分享</title>
+        <description>&lt;p&gt;看看iOS大神们的博客吧：&lt;/p&gt;
+
+&lt;p&gt;王巍
+http://onevcat.com/&lt;/p&gt;
+
+&lt;p&gt;破船之家
+http://beyondvincent.com/&lt;/p&gt;
+
+&lt;p&gt;NSHipster
+http://nshipster.cn/&lt;/p&gt;
+
+&lt;p&gt;Limboy 无网不剩
+http://limboy.me&lt;/p&gt;
+
+&lt;p&gt;唐巧的技术博客
+http://blog.devtang.com/&lt;/p&gt;
+
+&lt;p&gt;Lex iOS notes
+http://ios.lextang.com/&lt;/p&gt;
+
+&lt;p&gt;念茜的博客
+http://nianxi.net/&lt;/p&gt;
+
+&lt;p&gt;Xcode Dev
+http://blog.xcodev.com/&lt;/p&gt;
+
+&lt;p&gt;Ted’s Homepage
+http://wufawei.com/&lt;/p&gt;
+
+&lt;p&gt;txx’s blog
+http://blog.t-xx.me/&lt;/p&gt;
+
+&lt;p&gt;KEVIN BLOG
+http://imkevin.me/&lt;/p&gt;
+
+&lt;p&gt;阿毛的蛋疼地
+http://www.xiangwangfeng.com/&lt;/p&gt;
+
+&lt;p&gt;亚庆的 Blog
+http://billwang1990.github.io/&lt;/p&gt;
+
+&lt;p&gt;Nonomori
+http://nonomori.farbox.com/&lt;/p&gt;
+
+&lt;p&gt;言无不尽
+http://tang3w.com/&lt;/p&gt;
+
+&lt;p&gt;Wonderffee’s Blog
+http://wonderffee.github.io/&lt;/p&gt;
+
+&lt;p&gt;I’m TualatriX
+http://imtx.me/&lt;/p&gt;
+
+&lt;p&gt;vclwei
+http://vclwei.com/&lt;/p&gt;
+
+&lt;p&gt;Cocoabit
+http://blog.cocoabit.com/&lt;/p&gt;
+
+&lt;p&gt;nixzhu on scriptogr.am
+http://nixzhu.me/&lt;/p&gt;
+
+&lt;p&gt;不会开机的男孩
+http://studentdeng.github.io/&lt;/p&gt;
+
+&lt;p&gt;Nico
+http://www.taofengping.com/&lt;/p&gt;
+
+&lt;p&gt;阿峰的技术窝窝
+http://hufeng825.github.io/&lt;/p&gt;
+
+&lt;p&gt;answer_huang
+http://answerhuang.duapp.com/index.php/&lt;/p&gt;
+
+&lt;p&gt;webfrogs
+http://webfrogs.me/&lt;/p&gt;
+
+&lt;p&gt;代码手工艺人
+http://joeyio.com/&lt;/p&gt;
+
+&lt;p&gt;Lancy’s Blog
+http://gracelancy.com/&lt;/p&gt;
+
+&lt;p&gt;I’m Allen
+http://www.imallen.com/&lt;/p&gt;
+
+&lt;p&gt;Travis’ Blog
+http://imi.im/&lt;/p&gt;
+
+&lt;p&gt;王中周的技术博客
+http://wangzz.github.io/&lt;/p&gt;
+
+&lt;p&gt;会写代码的猪
+http://gaosboy.com/&lt;/p&gt;
+
+&lt;p&gt;克伟的博客
+http://feed.cnblogs.com/blog/u/23857&lt;/p&gt;
+
+&lt;p&gt;摇滚诗人
+http://feed.cnblogs.com/blog/u/35410&lt;/p&gt;
+
+&lt;p&gt;Luke’s Homepage
+http://geeklu.com/&lt;/p&gt;
+
+&lt;p&gt;萧宸宇
+http://iiiyu.com/&lt;/p&gt;
+
+&lt;p&gt;Yuan博客
+http://www.heyuan110.com/&lt;/p&gt;
+
+&lt;p&gt;Shining IO
+http://shiningio.com/&lt;/p&gt;
+
+&lt;p&gt;YIFEIYANG–易飞扬的博客
+http://www.yifeiyang.net/&lt;/p&gt;
+
+&lt;p&gt;KooFrank’s Blog
+http://koofrank.com/&lt;/p&gt;
+
+&lt;p&gt;hello it works
+http://helloitworks.com/&lt;/p&gt;
+
+&lt;p&gt;码农人生
+http://msching.github.io/&lt;/p&gt;
+
+&lt;p&gt;玉令天下的Blog
+http://yulingtianxia.com/&lt;/p&gt;
+
+&lt;p&gt;不掏蜂窝的熊
+http://www.hotobear.com/&lt;/p&gt;
+
+&lt;p&gt;猫·仁波切
+https://andelf.github.io/&lt;/p&gt;
+
+&lt;p&gt;煲仔饭
+http://ivoryxiong.org/&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Nov 2015 10:16:25 +0800</pubDate>
+        <link>http://localhost:4000/2015/11/Blog-site/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/Blog-site/</guid>
+        
+        <category>iOS</category>
         
         
       </item>
