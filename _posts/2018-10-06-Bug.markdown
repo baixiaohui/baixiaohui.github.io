@@ -19,4 +19,4 @@ reGeocode不为nil时，某些reGeocode.citycode，  reGeocode.district，reGeo
 5、weiboSDK已经很久没有维护了，在swift4.2之后会出现很多闪退问题
 
 6、 -[AVCaptureMetadataOutput setMetadataObjectTypes:] Unsupported type found - use -availableMetadataObjectTypes
-这个问题不仅是权限未开启会导致，设置sessionPreset时请先使用supportsSessionPreset校验，某些手机硬件不支持。
+这个问题不仅是权限未开启会导致，设置sessionPreset时请先使用supportsSessionPreset校验，老机型硬件可能不支持。
